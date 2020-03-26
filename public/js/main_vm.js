@@ -1,5 +1,6 @@
 // imports always go first - if we're importing anything
-import ChatMessage from "./modules/ChatMessage.js"
+import ChatMessage from "./modules/ChatMessage.js";
+import welcome from "./modules/welcomeMessage.js";
 
 const socket = io();
 
@@ -40,11 +41,24 @@ const vm = new Vue({
                 // if this.nickName is set, use it as the value
                 // or just make name "anonymous"
             })
+        },
+
+
+        username() {
+            console.log('handle send message');
+
+            socket.emit('chat_message', {
+                name: this.nickName || "anonymous"
+                // || is called a double pipe operator or an "or" operator
+                // if this.nickName is set, use it as the value
+                // or just make name "anonymous"
+            })
         }
     },
 
     components: {
-        newmessage: ChatMessage
+        newmessage: ChatMessage,
+        welcome
     },
 
     mounted: function() {
