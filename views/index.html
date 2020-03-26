@@ -3,32 +3,137 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Socket IO Chat with Node!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/main.css">
 	<script src="https://unpkg.com/vue"></script>
+
+	<title>MangoChat</title>
 </head>
 
 <body>
 	<main id="app">
-		<section class="form-container">
-			<label for="nickname">Your Nickname (optional)</label>
-			<input type="text" id="nickname" class="nickname" placeholder="What is your nickname?">
 
-			<form>
-				<label for="message">Something to say?</label>
-				<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
-				<input @click.prevent="dispatchMessage" type="submit">
-			</form>
-		</section>
+		<div class="ct" id="t1">
+			<div class="ct" id="t2">
+			  <div class="ct" id="t3">
+				<div class="ct" id="t4">
+				   <div class="ct" id="t5">
+					<ul id="menu">
+					  <a href="#t1"><li class="icon" id="uno"><img src="images/hello.svg" alt=""></li></a>
+					  <a href="#t2"><li class="icon" id="dos"><img src="images/user.svg" alt=""></li></a>
+					  <a href="#t3"><li class="icon" id="tres"><img src="images/speech-bubble.svg" alt=""></li></a>
+					  <a href="#t4"><li class="icon" id="cuatro"><img src="images/information.svg" alt=""></li></a>
+					  <a href="#t5"><li class="icon" id="cinco"><img src="images/creativity.svg" alt=""></li></li></a>
+					</ul>
+					<div class="page" id="p1">
+					
+					   <section class="welcome">
 
-		<section class="messages">
-			<ul id="messages">
-				<!-- render a new message component for every message -->
-				<newmessage :msg="message" v-for="message in messages"></newmessage>
-			</ul>
-		</section>
+						<welcome></welcome>
+				
+			
+				</section>
+					</div>
+
+					<div class="page" id="p2">
+						<section class="profile">
+
+						
+
+							<section class="form-c">
+								<label for="nickname" id="h1"><h1>Your username!!:</h1></label>
+								<input v-model="nickName" type="text" id="nickName" class="nickName" placeholder="What is your nickname?">
+
+								<a href="#t3" class="chat-btn">CHAT</a>
+					
+					
+							</section>
+
+					
+		
+						</section>
+					
+					</div>  
+					<div class="page" id="p3">
+					 
+					  <section class="chatbox">
+
+						<section class="form-container">
+
+							
+
+							<label for="message">Something to say?</label>
+							<form class="row">
+								
+								<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
+								<input @click.prevent="dispatchMessage" type="submit">
+
+								
+							</form>
+
+							<a href="#t2" class="user-btn">Change your username</a>
+				
+						</section>
+				
+						<section class="messages">
+							<ul id="messages">
+								<!-- render a new message component for every message -->
+								<newmessage :msg="message" v-for="message in messages"></newmessage>
+							</ul>
+						</section>
+	
+					</section>
+
+					
+					</div>
+					<div class="page" id="p4">
+					  <section class="about">
+						<p>
+						  MangoChat is a an interactive project done using vue.js, node.js and socket.io
+
+						  Designed and Developed by Ife Obasa
+
+						
+						</p>
+
+						<a href="#t5">Learn More</a>
+
+					  </section>
+					</div> 
+					<div class="page" id="p5">
+					  <section class="me">
+						<p>My name is Ife Obasa, I'm an aspiring web developer. I'm an Interactive Media Student at Fanshawe College.
+
+							I like food.</p>
+							<br><br>
+							Socials:
+							<div class="social-media">
+								<a href="https://www.instagram.com/iffybaas/">instagram</a>
+				  
+								<a href="https://github.com/iobasa">github</a>
+						
+								<a href="https://www.linkedin.com/in/ife-obasa-567593191/">linkedIn</a>
+							</div>
+					  </section>
+					</div> 
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  
+
+		
+
 	</main>
+
+	<script src="js/main.js"></script>
 	<script src="/socket.io/socket.io.js"></script>
+	
 	<script type="module" src="js/main_vm.js"></script>
 </body>
 
