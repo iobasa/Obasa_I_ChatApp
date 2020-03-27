@@ -1,6 +1,8 @@
 // imports always go first - if we're importing anything
 import ChatMessage from "./modules/ChatMessage.js";
 import welcome from "./modules/welcomeMessage.js";
+import aboutme from "./modules/AboutMe.js";
+import aboutapp from "./modules/AboutApp.js";
 
 const socket = io();
 
@@ -58,7 +60,9 @@ const vm = new Vue({
 
     components: {
         newmessage: ChatMessage,
-        welcome
+        welcome,
+        aboutme,
+        aboutapp
     },
 
     mounted: function() {
