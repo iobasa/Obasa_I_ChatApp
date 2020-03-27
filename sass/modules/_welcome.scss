@@ -1,0 +1,107 @@
+.welcome{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 55%;
+    margin-left: 16%;
+    justify-self: center;
+    justify-content: center;
+}
+
+.welcome h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.choose-btn{
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(#1f1f1f, #17141d, #151514);
+    font-family: 'Poppins', sans-serif;
+        width: 30%; 
+        height: 20%;
+        font-size: 1rem;
+        padding: 10px 35px; 
+        margin-top: 2rem !important;
+        border-radius: 15px;
+        margin-top: 0rem; 
+        border: none;
+        color: white;
+        cursor: pointer;
+        text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 48em) {
+    
+.welcome{
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	padding: 20px;
+	margin-top: 25%;
+	margin-left: 16%;
+	justify-self: center;
+	justify-content: center;
+}
+
+.welcome h1{
+	text-align: center;
+	font-size: 5rem;
+}
+
+.choose-btn{
+	background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(#1f1f1f, #17141d, #151514);
+	font-family: 'Poppins', sans-serif;
+		width: 30%; 
+		height: 20%;
+		font-size: 1rem;
+		padding: 10px 75px; 
+		margin-top: 2rem !important;
+		border-radius: 15px;
+		margin-left: 6rem;
+		margin-top: 0rem; 
+		border: none;
+		color: white;
+		cursor: pointer;
+		text-transform: uppercase;
+}
+
+
+}
+
+
+@media screen and (min-width: 64em) {
+    .welcome{
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 8%;
+        margin-left: 16%;
+        justify-self: center;
+        justify-content: center;
+    }
+    
+    .welcome h1{
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    .choose-btn{
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(#1f1f1f, #17141d, #151514);
+        font-family: 'Poppins', sans-serif;
+            width: 30%; 
+            height: 20%;
+            font-size: 2rem;
+            padding: 10px 75px; 
+            margin-top: 2rem !important;
+            border-radius: 15px;
+            margin-left: 27rem;
+            margin-top: 0rem; 
+            border: none;
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+    }
+    
+}
