@@ -52,6 +52,7 @@ npm start
 
 ## Acknowledgments
 
+* [One Page Navigation CSS Menu](https://codepen.io/hrtzt/details/NPZKRN) - creator's website: www.albertohartzet.com
 * [awesome-readme](https://github.com/matiassingers/awesome-readme)
 * [README Formatting](https://guides.github.com/features/mastering-markdown/)
 * [Meyerweb CSS Reset](https://meyerweb.com/eric/tools/css/reset/)
